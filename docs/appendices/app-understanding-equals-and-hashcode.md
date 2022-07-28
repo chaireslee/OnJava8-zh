@@ -544,7 +544,7 @@ Groundhog2.hashCode0 返回 Groundhog 的标识数字（编号）作为散列码
 
 ### 理解 hashCode
 
-前面的例子只是正确解决问题的第一步。它只说明，如果不为你的键覆盖 hashCode() 和 equals() ，那么使用散列的数据结构（HashSet，HashMap，LinkedHashst 或 LinkedHashMap）就无法正确处理你的键。然而，要很好地解决此问题，你必须了解这些数据结构的内部构造。
+前面的例子只是正确解决问题的第一步。它只说明，如果不为你的键覆盖 hashCode() 和 equals() ，那么使用散列的数据结构（HashSet，HashMap，LinkedHashSet 或 LinkedHashMap）就无法正确处理你的键。然而，要很好地解决此问题，你必须了解这些数据结构的内部构造。
 
 首先，使用散列的目的在于：想要使用一个对象来查找另一个对象。不过使用 TreeMap 或者你自己实现的 Map 也可以达到此目的。与散列实现相反，下面的示例用一对 ArrayLists 实现了一个 Map，与 AssociativeArray.java 不同，这其中包含了 Map 接口的完整实现，因此提供了 entrySet()方法：
 
